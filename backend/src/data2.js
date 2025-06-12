@@ -40,7 +40,7 @@ app.get("/guzergahhattidisiotobusler", async (req, res) => {
             try {
                 const reportResponse = await axios.get(`https://nimbus.wialon.com/api/depot/8941/report/route/${item.routeId}?flags=1&df=${startDate}&dt=${finishDate}&sort=timetable`, {
                     headers: {
-                        'Authorization': 'Token f4c4b3b8966941a9b5aff26e6b24f21f',
+                        'Authorization': 'Token',
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     }
